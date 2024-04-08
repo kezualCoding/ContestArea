@@ -1,82 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <title>Document</title>
+    <link rel="icon" type="image" href="/assets/logo.png">
+    <title>Contest Area</title>
 </head>
-
 <body>
     <header>
-        <div class="display">
-        <div id="leetcodeTable">
-            <div class="table-body">
-                <div class="body-row" id = "all" style = "width: 70px; align-items: center; display: flex; justify-content: center;">
-                    All
+        <div class="header">
+            <nav class="mainNav">
+                <div class="mainNav__logo"><a href = '../../index.html'>Kezual Coding ~ Contest Area</a></div>
+                <div class="mainNav__links">
+                <a href="../leetcode/leetcode.html" class="mainNav__link">Leetcode</a>
+                <a href="../projects/project.html" class="mainNav__link">Projects</a>
+                <a href="../team/team.html" class="mainNav__link">Team</a>
+                <a href="../contacts/contact.html" class="mainNav__link">Contacts</a>
                 </div>
-                <div class="body-row clicked" id = "leetcode">
-                    <div>
-                        <img src="https://leetcode.com/_next/static/images/logo-dark-c96c407d175e36c81e236fcfdd682a0b.png">
-                        Leetcode
-                    </div>
+                <div class="mainNav__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <g data-name="Layer 2" fill="#9197AE">
+                        <g data-name="menu-2">
+                            <rect
+                            width="24"
+                            height="24"
+                            transform="rotate(180 12 12)"
+                            opacity="0"
+                            />
+                            <circle cx="4" cy="12" r="1" />
+                            <rect x="7" y="11" width="14" height="2" rx=".94" ry=".94" />
+                            <rect x="3" y="16" width="18" height="2" rx=".94" ry=".94" />
+                            <rect x="3" y="6" width="18" height="2" rx=".94" ry=".94" />
+                        </g>
+                    </g>
+                </svg>
                 </div>
-
-                <div class="body-row clicked" id = "codeforces">
-                    <div>
-                        <img src="https://d3sxshmncs10te.cloudfront.net/icon/free/svg/3029920.svg?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkM3N4c2htbmNzMTB0ZS5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTcxMjcwNjc4NywicSI6bnVsbCwiaWF0IjoxNzEyNDQ3NTg3fQ__.3b157a3dc01a36d66ebed1c6c8d038d833be53630c797fbeaeddf04007b54b1b">
-                        Codeforces
-                    </div>
-                </div>
-                <div class="body-row clicked" id = "atcoder">
-                    <div>
-                        <img src="https://img.atcoder.jp/assets/top/img/logo_wh.svg">
-                        Atcoder
-                    </div>
-                </div>
-                <div class="body-row clicked" id = "codechef">
-                    <div>
-                        <img src="https://www.svgrepo.com/show/305880/codechef.svg" style = "background-color: white;">
-                        Codechef
-                    </div>
-                </div>
-                <div class="body-row clicked" id = "codingninjas">
-                    <div>
-                        <img src="https://images.crunchbase.com/image/upload/c_pad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/hngr1vxmwf3pxuzxsmit" >
-                        Coding Ninja
-                    </div>
-                </div>
-                <div class="body-row clicked" id = "ICPC">
-                    <div>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/ICPC_logo.png?20180204032844">
-                        ICPC
-                    </div>
-                </div>
-                <div class="body-row clicked" id = "geeksforgeeks">
-                    <div>
-                        <img src="https://img.icons8.com/?size=192&id=AbQBhN9v62Ob&format=png">
-                        GeeksforGeeks
-                    </div>
-                </div>
-            </div>
-            <div class = "statistics">
-                <a href = "https://pranay0083.github.io/stastistics/" style = "text-decoration: none; color: silver;">Statistics</a>
-            </div>
+            </nav>
         </div>
-
+    </header>
+    <div class="filter">
+        <button class="body-row clicked" id = "all"><span>All</span></button>
+        <button class="body-row clicked" id = "leetcode"><span>LeetCode</span></button>
+        <button class="body-row clicked" id = "gsu"><span>GSU</span></button>
+        <button class="body-row clicked" id = "yandex"><span>Yandex</span></button>
+        <button class="body-row clicked" id = "codingninjas"><span>Coding Ninjas</span></button>
+        <button class="body-row clicked" id = "projecteuler"><span>Project Euler</span></button>
+        <button class="body-row clicked" id = "atcoder"><span>AtCoder</span></button>
+        <button class="body-row clicked" id = "geeksforgeeks"><span>GeeksforGeeks</span></button>
+        <button class="body-row clicked" id = "codeforces"><span>Codeforces</span></button>
+        <button class="body-row clicked" id = "codechef"><span>CodeChef</span></button>
+        <button class="body-row clicked" id = "robocontest"><span>RoboContest</span></button>
+        <button class="body-row clicked" id = "cfttime"><span>CTFtime</span></button>
+        <button class="body-row clicked" id = "yukicoder"><span>Yukicoder</span></button>
+        <button class="body-row clicked" id = "cups"><span>CUPS</span></button>
+        <button class="body-row clicked" id = "icpc"><span>ICPC</span></button>
+        <button class="body-row clicked" id = "huawei"><span>Huawei</span></button>
+        <button class="body-row clicked" id = "topcoder"><span>TopCoder</span></button>
+        <button class="body-row clicked" id = "acm"><span>ACM</span></button>
+        <button class="body-row clicked" id = "techgig"><span>TechGig</span></button>
+        <button class="body-row clicked" id = "icpcc"><span>ICFP Conference</span></button>
     </div>
-</header>
-    <div class="main">
+    <div class="card-container">
+        <div class="main">	
+            
+        </div>
     </div>
-
     <script src="script.js"></script>
-
 </body>
-
 </html>
-
-
-
-
